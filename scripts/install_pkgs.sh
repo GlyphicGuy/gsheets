@@ -42,6 +42,7 @@ pkgs=(
 	"@stdlib/math-base-special-abs"
 	"@stdlib/math-base-special-abs2"
 	"@stdlib/math-base-special-acos"
+	"@stdlib/math-base-special-acosd"
 	"@stdlib/math-base-special-acosh"
 	"@stdlib/math-base-special-acot"
 	"@stdlib/math-base-special-acovercos"

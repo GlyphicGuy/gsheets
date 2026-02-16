@@ -105,6 +105,27 @@
     "prng": "uniform"
   },
   {
+    "alias": "acotd",
+    "pkg": "math/base/special/acotd",
+    "pkg_desc": "Compute the inverse cotangent of a number (in degrees)",
+    "desc": "Computes the inverse cotangent of a number (in degrees)",
+    "dtypes": [
+      "float64",
+      "float64"
+    ],
+    "values": [
+      1.0,
+      2.707,
+      0.866,
+      -0.5,
+      -3.5,
+      0.0
+    ],
+    "min": -5.0,
+    "max": 5.0,
+    "prng": "uniform"
+  },
+  {
     "alias": "acovercos",
     "pkg": "math/base/special/acovercos",
     "pkg_desc": "Compute the inverse coversed cosine",

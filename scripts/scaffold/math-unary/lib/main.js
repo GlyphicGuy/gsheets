@@ -58,7 +58,7 @@ var TEMPLATES = {
 	'test': readFile( resolve( DATA_DIR, 'test__js.txt' ), OPTS ),
 	'makefile': readFile( resolve( DATA_DIR, 'Makefile.txt' ), OPTS ),
 	'package_json': readFile( resolve( DATA_DIR, 'package__json.txt' ), OPTS ),
-	'readme': readFile( resolve( DATA_DIR, 'readme__md.txt' ), OPTS )
+	'readme': readFile( resolve( DATA_DIR, 'README__md.txt' ), OPTS )
 };
 
 var DEST_DIR = resolve( ROOT_DIR, 'src', 'node_modules', '@stdlib', 'gsheets', 'api', 'math' );

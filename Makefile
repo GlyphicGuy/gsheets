@@ -229,10 +229,11 @@ endif
 # Determine the `open` command:
 ifeq ($(OS), Darwin)
 	OPEN ?= open
+else ifeq ($(OS), WINNT)
+	OPEN ?= start
 else
 	OPEN ?= xdg-open
 endif
-# TODO: add Windows command
 
 # Define Node paths:
 NODE_PATH ?= $(SRC_NODE_MODULES)

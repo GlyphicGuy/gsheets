@@ -630,7 +630,9 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] dgemm
 - [ ] ggemm
 - [ ] sgemm
-
->_there are complex BLAS functions that needs the complex numbers infrastructure in the integration repo_
+---
+> _The complex BLAS functions need the complex numbers infrastructure in the integration repo, hence not included in the audit_
 
 # `api/array` Functions Checklist
+
+> _still under process as I ran into some confusions_

@@ -2,9 +2,50 @@ Audit for filling the gap between the gsheets integration and the core stdlib.
 
 This is an initial checklist  only and it's very likely that it will need changes based on feedback and guidance.
 
-Table of Contents
+### Table of Contents
 
-- [api/math](#apimath-functions-checklist)
+- [`api/math` Functions Checklist](#apimath-functions-checklist)
+	- [Unary Functions](#unary-functions-200)
+		- [Absolute Value & Basic Operations](#absolute-value--basic-operations-14)
+		- [Trigonometric](#trigonometric-46)
+		- [Hyperbolic](#hyperbolic-6)
+		- [Coversed/Versed Trigonometric](#coversedversed-trigonometric-19)
+		- [Rounding/Ceiling/Floor](#roundingceilingfloor-13)
+		- [Logarithmic](#logarithmic-13)
+		- [Gamma Functions](#gamma-functions-7)
+		- [Special Functions](#special-functions-6)
+		- [Factorial & Sequences](#factorial--sequences-19)
+		- [Sign & Comparison](#sign--comparison-6)
+		- [Conversions](#conversions-3)
+		- [Extractions](#extractions-6)
+		- [Multiple Return Values](#multiple-return-values-8)
+		- [Kernel Functions](#kernel-functions-10)
+	- [Binary Functions](#binary-functions-71)
+		- [Arithmetic](#arithmetic-12)
+		- [Sign Operations](#sign-operations-6)
+		- [Min/Max(binary)](#minmaxbinary-16)
+		- [Special Functions](#special-functions-10)
+		- [Number Theory](#number-theory-6)
+		- [Distance](#distance-2)
+		- [Logarithmic](#logarithmic-4)
+		- [Factorials](#factorials-2)
+		- [Transforms](#transforms-4)
+		- [Rounding to Base/Precision](#rounding-to-baseprecision-11)
+	- [Other Functions](#other-functions-15)
+		- [Variable Arguments](#variable-arguments-6)
+		- [Ternary Functions (Three Arguments)](#ternary-functions-three-arguments-8)
+		- [Four+ Arguments](#four-arguments-1)
+		- [Complex Operations](#complex-operations-24)
+- [`api/string` Functions Checklist](#apistring-functions-checklist46)
+- [`api/stats` Functions Checklist](#apistats-functions-checklist47)
+- [`api/datasets` Functions Checklist](#apidatasets-functions-checklist-56)
+- [`api/blas` Functions Checklist](#apiblas-functions-checklist-57)
+	- [Level 1](#level-1-33)
+	- [Level 2](#level-2-21)
+	- [Level 3](#level-3-3)
+- [`api/array` Functions Checklist](#apiarray-functions-checklist)
+
+---
 
 # `api/math` Functions Checklist
 Roughly ~286 APIs need to be exposed under this namespace to bring it on par with the main stdlib.
@@ -526,8 +567,8 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] us-states-names
 - [ ] us-states-names-capitals
 
-# `api/blas` Functions Checklist
-### Level 1
+# `api/blas` Functions Checklist [57]
+### Level 1 [33]
 - [ ] dasum
 - [ ] dcopy
 - [ ] ddot
@@ -562,7 +603,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] sscal
 - [ ] sswap
 
-### Level 2
+### Level 2 [21]
 - [ ] dgemv
 - [ ] dger
 - [ ] dspmv
@@ -585,7 +626,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] strmv
 - [ ] strsv
 
-### Level 3
+### Level 3 [3]
 - [ ] dgemm
 - [ ] ggemm
 - [ ] sgemm

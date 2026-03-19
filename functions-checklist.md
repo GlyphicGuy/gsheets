@@ -5,40 +5,39 @@ This is an initial checklist  only and it's very likely that it will need change
 ### Table of Contents
 
 - [`api/math` Functions Checklist](#apimath-functions-checklist)
-	- [Unary Functions](#unary-functions-200)
-		- [Absolute Value & Basic Operations](#absolute-value--basic-operations-14)
-		- [Trigonometric](#trigonometric-46)
-		- [Hyperbolic](#hyperbolic-6)
-		- [Coversed/Versed Trigonometric](#coversedversed-trigonometric-19)
-		- [Rounding/Ceiling/Floor](#roundingceilingfloor-13)
-		- [Logarithmic](#logarithmic-13)
-		- [Gamma Functions](#gamma-functions-7)
-		- [Special Functions](#special-functions-6)
-		- [Factorial & Sequences](#factorial--sequences-19)
-		- [Sign & Comparison](#sign--comparison-6)
-		- [Conversions](#conversions-3)
-		- [Extractions](#extractions-6)
-		- [Multiple Return Values](#multiple-return-values-8)
-		- [Kernel Functions](#kernel-functions-10)
-	- [Binary Functions](#binary-functions-71)
-		- [Arithmetic](#arithmetic-12)
-		- [Sign Operations](#sign-operations-6)
-		- [Min/Max(binary)](#minmaxbinary-16)
-		- [Special Functions](#special-functions-10)
-		- [Number Theory](#number-theory-6)
-		- [Distance](#distance-2)
-		- [Logarithmic](#logarithmic-4)
+	- [Unary Functions](#unary-functions-85)
+		- [Absolute Value & Basic Operations](#absolute-value--basic-operations-5)
+		- [Trigonometric](#trigonometric-19)
+		- [Hyperbolic](#hyperbolic-4)
+		- [Coversed/Versed Trigonometric](#coversedversed-trigonometric-7)
+		- [Rounding/Ceiling/Floor](#roundingceilingfloor-10)
+		- [Logarithmic](#logarithmic-9)
+		- [Gamma Functions](#gamma-functions-5)
+		- [Special Functions](#special-functions-3)
+		- [Factorial & Sequences](#factorial--sequences-10)
+		- [Sign & Comparison](#sign--comparison-3)
+		- [Conversions](#conversions-1)
+		- [Extractions](#extractions-2)
+		- [Multiple Return Values](#multiple-return-values-7)
+	- [Binary Functions](#binary-functions-49)
+		- [Arithmetic](#arithmetic-6)
+		- [Sign Operations](#sign-operations-3)
+		- [Min/Max(binary)](#minmaxbinary-8)
+		- [Special Functions](#special-functions-9)
+		- [Number Theory](#number-theory-3)
+		- [Distance](#distance-1)
+		- [Logarithmic](#logarithmic-3)
 		- [Factorials](#factorials-2)
 		- [Transforms](#transforms-4)
-		- [Rounding to Base/Precision](#rounding-to-baseprecision-11)
-	- [Other Functions](#other-functions-15)
+		- [Rounding to Base/Precision](#rounding-to-baseprecision-10)
+	- [Other Functions](#other-functions-27)
 		- [Variable Arguments](#variable-arguments-6)
-		- [Ternary Functions (Three Arguments)](#ternary-functions-three-arguments-8)
+		- [Ternary Functions (Three Arguments)](#ternary-functions-three-arguments-6)
 		- [Four+ Arguments](#four-arguments-1)
-		- [Complex Operations](#complex-operations-24)
-- [`api/string` Functions Checklist](#apistring-functions-checklist46)
-- [`api/stats` Functions Checklist](#apistats-functions-checklist47)
-- [`api/datasets` Functions Checklist](#apidatasets-functions-checklist-56)
+		- [Complex Operations](#complex-operations-14)
+- [`api/string` Functions Checklist](#apistring-functions-checklist-46)
+- [`api/stats` Functions Checklist](#apistats-functions-checklist-47)
+- [`api/datasets` Functions Checklist](#apidatasets-functions-checklist-43)
 - [`api/blas` Functions Checklist](#apiblas-functions-checklist-57)
 	- [Level 1](#level-1-33)
 	- [Level 2](#level-2-21)
@@ -49,264 +48,150 @@ This is an initial checklist  only and it's very likely that it will need change
 
 # `api/math` Functions Checklist
 Roughly ~286 APIs need to be exposed under this namespace to bring it on par with the main stdlib.
-## Unary Functions [~200]
+## Unary Functions [85]
 
-### Absolute Value & Basic Operations [14]
-- [ ] abs2f
-- [ ] absf
-- [ ] absgammalnf
-- [ ] cbrtf
+### Absolute Value & Basic Operations [5]
 - [ ] inv
-- [ ] invf
 - [ ] labs
-- [ ] sqrtf
 - [ ] sqrtpi
-- [ ] sqrtpif
 - [ ] rsqrt
-- [ ] rsqrtf
 - [ ] rcbrt
-- [ ] rcbrtf
 
-### Trigonometric [46]
-- [ ] acosdf
-- [ ] acosf
-- [ ] acotdf
-- [ ] acotf
+### Trigonometric [19]
 - [ ] acscd
-- [ ] acscdf
-- [ ] acscf
 - [ ] asec
 - [ ] asecd
-- [ ] asecdf
-- [ ] asecf
 - [ ] asind
-- [ ] asindf
-- [ ] asinf
 - [ ] atand
-- [ ] atandf
-- [ ] atanf
 - [ ] cosd
-- [ ] cosdf
-- [ ] cosf
-- [ ] cosm1f
-- [ ] cospif
 - [ ] cotd
-- [ ] cotdf
-- [ ] cotf
 - [ ] csc
 - [ ] cscd
-- [ ] cscdf
-- [ ] cscf
 - [ ] sec
 - [ ] secd
-- [ ] secdf
-- [ ] secf
 - [ ] sinc
-- [ ] sincf
 - [ ] sind
-- [ ] sindf
-- [ ] sinf
 - [ ] sinh
 - [ ] sinpi
-- [ ] sinpif
 - [ ] tan
 - [ ] tand
-- [ ] tandf
 - [ ] tanf
 - [ ] tanh
 
-### Hyperbolic [6]
+### Hyperbolic [4]
 - [ ] acoth
 - [ ] asech
-- [ ] asinhf
-- [ ] atanhf
 - [ ] csch
 - [ ] sech
 
-### Coversed/Versed Trigonometric [19]
-- [ ] acovercosf
-- [ ] acoversinf
+### Coversed/Versed Trigonometric [7]
 - [ ] ahaversin
-- [ ] avercosf
-- [ ] aversinf
-- [ ] covercosf
-- [ ] coversinf
 - [ ] hacovercos
-- [ ] hacovercosf
 - [ ] hacoversin
-- [ ] hacoversinf
 - [ ] havercos
-- [ ] havercosf
 - [ ] haversin
-- [ ] haversinf
 - [ ] vercos
-- [ ] vercosf
 - [ ] versin
-- [ ] versinf
 
-### Rounding/Ceiling/Floor [13]
+### Rounding/Ceiling/Floor [10]
 - [ ] floor
 - [ ] floor10
 - [ ] floor2
-- [ ] floorf
 - [ ] round
 - [ ] round10
 - [ ] round2
-- [ ] roundf
 - [ ] round-nearest-even
 - [ ] trunc
 - [ ] trunc10
 - [ ] trunc2
-- [ ] truncf
 
-
-
-### Logarithmic [13]
+### Logarithmic [9]
 - [ ] ln
-- [ ] lnf
 - [ ] log
 - [ ] log10
 - [ ] log1mexp
 - [ ] log1p
 - [ ] log1pexp
-- [ ] log1pf
 - [ ] log1pmx
 - [ ] log2
-- [ ] logf
 - [ ] logit
-- [ ] logitf
 
-### Gamma Functions [7]
+### Gamma Functions [5]
 - [ ] gamma
 - [ ] gamma1pm1
 - [ ] gammaln
 - [ ] gammasgn
-- [ ] gammasgnf
 - [ ] trigamma
-- [ ] trigammaf
 
-### Special Functions [6]
-- [ ] bernoullif
+### Special Functions [3]
 - [ ] erfcx
 - [ ] spence
-- [ ] spencef
 - [ ] dirac-delta
-- [ ] dirac-deltaf
 
-### Factorial & Sequences [19]
+### Factorial & Sequences [10]
 - [ ] factorial
 - [ ] factorial2
-- [ ] factorial2f
 - [ ] factorialln
-- [ ] factoriallnf
 - [ ] fibonacci
-- [ ] fibonaccif
 - [ ] fibonacci-index
-- [ ] fibonacci-indexf
 - [ ] lucas
-- [ ] lucasf
 - [ ] negafibonacci
-- [ ] negafibonaccif
 - [ ] negalucas
-- [ ] negalucasf
 - [ ] tribonacci
-- [ ] tribonaccif
 - [ ] nonfibonacci
-- [ ] nonfibonaccif
 
-### Sign & Comparison [6]
+### Sign & Comparison [3]
 - [ ] signum
-- [ ] signumf
 - [ ] heaviside
-- [ ] heavisidef
 - [ ] ramp
-- [ ] rampf
 
-### Conversions [3]
-- [ ] deg2radf
+### Conversions [1]
 - [ ] rad2deg
-- [ ] rad2degf
 
-### Extractions [6]
+### Extractions [2]
 - [ ] frexp
-- [ ] frexpf
-- [ ] modf
-- [ ] modff
 - [ ] rempio2
-- [ ] rempio2f
 
-### Multiple Return Values [8] 
+### Multiple Return Values [7] 
 _(existing scaffolding does not support multiple return values, implementation needed)_
 - [ ] sincos
 - [ ] sincosd
-- [ ] sincosf
 - [ ] sincospi
 - [ ] fresnel
 - [ ] fresnelc
 - [ ] fresnels
 - [ ] sici
 
-### Kernel Functions [10]
-_(not for a normal user but will be helpful for some professional groups that rely on these kernalised verison for accuracy)_
-- [ ] kernel-cos
-- [ ] kernel-cosf
-- [ ] kernel-log1p
-- [ ] kernel-log1pf
-- [ ] kernel-sin
-- [ ] kernel-sincos
-- [ ] kernel-sincosf
-- [ ] kernel-sinf
-- [ ] kernel-tan
-- [ ] kernel-tanf
 
+## Binary Functions [49]
 
-## Binary Functions [~71]
-
-### Arithmetic [12]
+### Arithmetic [6]
 - [ ] atan2
 - [ ] atan2d
-- [ ] atan2f
 - [ ] fmod
-- [ ] fmodf
 - [ ] pow
-- [ ] powf
 - [ ] powm1
-- [ ] pdiff
-- [ ] pdifff
 - [ ] ldexp
-- [ ] ldexpf
 
-### Sign Operations [6]
+### Sign Operations [3]
 - [ ] copysign
-- [ ] copysignf
 - [ ] flipsign
-- [ ] flipsignf
 - [ ] cflipsign
-- [ ] cflipsignf
 
-### Min/Max(binary) [16]
+### Min/Max(binary) [8]
 - [ ] max
 - [ ] maxabs
-- [ ] maxabsf
-- [ ] maxf
 - [ ] min
 - [ ] minabs
-- [ ] minabsf
-- [ ] minf
 - [ ] minmax
 - [ ] minmaxabs
-- [ ] minmaxabsf
-- [ ] minmaxf
 - [ ] nanmax
-- [ ] nanmaxf
 - [ ] nanmin
-- [ ] nanminf
 
-### Special Functions [10]
+### Special Functions [9]
 - [ ] beta
 - [ ] betaln
 - [ ] binomcoef
-- [ ] binomcoeff
 - [ ] binomcoefln
 - [ ] gamma-delta-ratio
 - [ ] gammainc
@@ -314,23 +199,18 @@ _(not for a normal user but will be helpful for some professional groups that re
 - [ ] ellipj
 - [ ] polygamma
 
-### Number Theory [6]
+### Number Theory [3]
 - [ ] gcd
-- [ ] gcdf
 - [ ] lcm
-- [ ] lcmf
 - [ ] kronecker-delta
-- [ ] kronecker-deltaf
 
-### Distance [2]
+### Distance [1]
 - [ ] hypot
-- [ ] hypotf
 
-### Logarithmic [4]
+### Logarithmic [3]
 - [ ] logaddexp
 - [ ] xlog1py
 - [ ] xlogy
-- [ ] xlogyf
 
 ### Factorials [2]
 - [ ] falling-factorial
@@ -342,14 +222,13 @@ _(not for a normal user but will be helpful for some professional groups that re
 - [ ] boxcox1pinv
 - [ ] boxcoxinv
 
-### Rounding to Base/Precision [11]
+### Rounding to Base/Precision [10]
 - [ ] ceilb
 - [ ] ceiln
 - [ ] ceilsd
 - [ ] floorb
 - [ ] roundb
 - [ ] roundn
-- [ ] roundnf
 - [ ] roundsd
 - [ ] truncb
 - [ ] truncn
@@ -357,7 +236,7 @@ _(not for a normal user but will be helpful for some professional groups that re
 
 ---
 
-## Other Functions [~15]
+## Other Functions [27]
 _(I'll need to tweak with the scaffolding to generate files for these individually as number of arguments are varied)_
 ### Variable Arguments [6]
 - [ ] maxabsn
@@ -367,48 +246,36 @@ _(I'll need to tweak with the scaffolding to generate files for these individual
 - [ ] minmaxn
 - [ ] minn
 
-### Ternary Functions (Three Arguments) [8]
+### Ternary Functions (Three Arguments) [6]
 _scaffolding scripts need to be made for this_
 - [ ] betainc
 - [ ] betaincinv
 - [ ] clamp
-- [ ] clampf
 - [ ] kernel-betainc
 - [ ] kernel-betaincinv
 - [ ] wrap
-- [ ] wrapf
 
 ### Four+ Arguments [1]
 - [ ] hyp2f1
 
-### Complex Operations [24]
+### Complex Operations [14]
 _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/complex` namespace implementation to add to the gsheets_
 - [ ] cabs
 - [ ] cabs2
-- [ ] cabs2f
-- [ ] cabsf
 - [ ] ccis
 - [ ] cexp
 - [ ] cinv
-- [ ] cinvf
 - [ ] cphase
-- [ ] cphasef
 - [ ] cpolar
-- [ ] cpolarf
 - [ ] csignum
-- [ ] csignumf
 - [ ] cceil
-- [ ] cceilf
 - [ ] cceiln
-- [ ] ceilf
 - [ ] cfloor
-- [ ] cfloorf
 - [ ] cfloorn
 - [ ] cround
-- [ ] croundf
 - [ ] croundn
 
-# `api/string` Functions Checklist[46]
+# `api/string` Functions Checklist [46]
 
 - [ ] acronym
 - [ ] code-point-at
@@ -457,7 +324,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] truncate-middle
 - [ ] utf16-to-utf8-array
 
-# `api/stats` Functions Checklist[47]
+# `api/stats` Functions Checklist [47]
 
 - [ ] anova1
 - [ ] binomial-test
@@ -508,7 +375,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] ztest2
 
 
-# `api/datasets` Functions Checklist [56]
+# `api/datasets` Functions Checklist [43]
 
 - [ ] afinn-111
 - [ ] afinn-96
@@ -518,25 +385,12 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] cdc-nchs-us-infant-mortality-bw-1915-2013
 - [ ] cmudict
 - [ ] dale-chall-new
-- [ ] emoji
-- [ ] emoji-code-picto
-- [ ] emoji-picto-code
 - [ ] female-first-names-en
 - [ ] fivethirtyeight-ffq
 - [ ] frb-sf-wage-rigidity
 - [ ] harrison-boston-house-prices
 - [ ] harrison-boston-house-prices-corrected
 - [ ] herndon-venus-semidiameters
-- [ ] img-acanthus-mollis
-- [ ] img-airplane-from-above
-- [ ] img-allium-oreophilum
-- [ ] img-black-canyon
-- [ ] img-dust-bowl-home
-- [ ] img-french-alpine-landscape
-- [ ] img-locomotion-house-cat
-- [ ] img-locomotion-nude-male
-- [ ] img-march-pastoral
-- [ ] img-nagasaki-boats
 - [ ] liu-negative-opinion-words-en
 - [ ] liu-positive-opinion-words-en
 - [ ] male-first-names-en

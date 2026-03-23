@@ -490,6 +490,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 # `api/array` Functions Checklist
 _This list is still under iterations and will be categorised into directories like `brodcasted`, `accessor`,etc.
 
+
 - [ ] accessor
 - [ ] accessor-getter
 - [ ] accessors
@@ -593,7 +594,6 @@ _This list is still under iterations and will be categorised into directories li
 - [ ] last
 - [ ] last-index-of
 - [ ] last-index-of-same-value
-- [ ] lib
 - [ ] linspace
 - [ ] linspace2d
 - [ ] logspace
@@ -602,7 +602,7 @@ _This list is still under iterations and will be categorised into directories li
 - [ ] map3d
 - [ ] map4d
 - [ ] map5d
-- [ ] min-signed-integer-dtype
+- [ ] min-signed-integer-dtypey
 - [ ] min-unsigned-integer-dtype
 - [ ] mskbinary2d
 - [ ] mskbinary3d
@@ -623,8 +623,6 @@ _This list is still under iterations and will be categorised into directories li
 - [ ] nested2objects
 - [ ] nested2views
 - [ ] none
-- [ ] none-by
-- [ ] none-by-right
 - [ ] nulls
 - [ ] ones
 - [ ] ones2d

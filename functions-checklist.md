@@ -32,16 +32,12 @@ This is an initial checklist  only and it's very likely that it will need change
 		- [Rounding to Base/Precision](#rounding-to-baseprecision-10)
 	- [Other Functions](#other-functions-27)
 		- [Variable Arguments](#variable-arguments-6)
-		- [Ternary Functions (Three Arguments)](#ternary-functions-three-arguments-6)
 		- [Four+ Arguments](#four-arguments-1)
 		- [Complex Operations](#complex-operations-14)
 - [`api/string` Functions Checklist](#apistring-functions-checklist-46)
 - [`api/stats` Functions Checklist](#apistats-functions-checklist-47)
-- [`api/datasets` Functions Checklist](#apidatasets-functions-checklist-43)
 - [`api/blas` Functions Checklist](#apiblas-functions-checklist-57)
 	- [Level 1](#level-1-33)
-	- [Level 2](#level-2-21)
-	- [Level 3](#level-3-3)
 - [`api/array` Functions Checklist](#apiarray-functions-checklist)
 
 ---
@@ -152,17 +148,6 @@ Roughly ~286 APIs need to be exposed under this namespace to bring it on par wit
 - [ ] frexp
 - [ ] rempio2
 
-### Multiple Return Values [7] 
-_(existing scaffolding does not support multiple return values, implementation needed)_
-- [ ] sincos
-- [ ] sincosd
-- [ ] sincospi
-- [ ] fresnel
-- [ ] fresnelc
-- [ ] fresnels
-- [ ] sici
-
-
 ## Binary Functions [49]
 
 ### Arithmetic [6]
@@ -189,8 +174,6 @@ _(existing scaffolding does not support multiple return values, implementation n
 - [ ] nanmin
 
 ### Special Functions [9]
-- [ ] beta
-- [ ] betaln
 - [ ] binomcoef
 - [ ] binomcoefln
 - [ ] gamma-delta-ratio
@@ -246,20 +229,11 @@ _(I'll need to tweak with the scaffolding to generate files for these individual
 - [ ] minmaxn
 - [ ] minn
 
-### Ternary Functions (Three Arguments) [6]
-_scaffolding scripts need to be made for this_
-- [ ] betainc
-- [ ] betaincinv
-- [ ] clamp
-- [ ] kernel-betainc
-- [ ] kernel-betaincinv
-- [ ] wrap
 
 ### Four+ Arguments [1]
 - [ ] hyp2f1
 
-### Complex Operations [14]
-_these are a part of the `@stdlib/math/base/special` will need the `@stdlib/complex` namespace implementation to add to the gsheets_
+### Complex Operations [14] (R&D required)
 - [ ] cabs
 - [ ] cabs2
 - [ ] ccis
@@ -278,30 +252,21 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 # `api/string` Functions Checklist [46]
 
 - [ ] acronym
-- [ ] code-point-at
 - [ ] dotcase
 - [ ] ends-with
 - [ ] first
-- [ ] for-each
 - [ ] format
-- [ ] from-code-point
 - [ ] headercase
 - [ ] last
 - [ ] left-pad
 - [ ] left-trim
 - [ ] left-trim-n
-- [ ] next-code-point-index
-- [ ] next-grapheme-cluster-break
 - [ ] num2words
-- [ ] num-code-points
-- [ ] num-grapheme-clusters
 - [ ] pad
 - [ ] percent-encode
-- [ ] prev-grapheme-cluster-break
 - [ ] remove-first
 - [ ] remove-last
 - [ ] remove-punctuation
-- [ ] remove-utf8-bom
 - [ ] remove-words
 - [ ] repeat
 - [ ] replace
@@ -310,34 +275,22 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] right-pad
 - [ ] right-trim
 - [ ] right-trim-n
-- [ ] split-grapheme-clusters
 - [ ] starts-with
 - [ ] substring-after
 - [ ] substring-after-last
 - [ ] substring-before
 - [ ] substring-before-last
-- [ ] to-grapheme-cluster-iterator
-- [ ] to-grapheme-cluster-iterator-right
-- [ ] to-well-formed
 - [ ] trim
 - [ ] truncate
 - [ ] truncate-middle
-- [ ] utf16-to-utf8-array
 
 # `api/stats` Functions Checklist [47]
 
-- [ ] anova1
-- [ ] binomial-test
 - [ ] chi2gof
-- [ ] chi2test
 - [ ] cumin
-- [ ] fligner-test
 - [ ] incr
 - [ ] iter
 - [ ] kde2d
-- [ ] kruskal-test
-- [ ] kstest
-- [ ] levene-test
 - [ ] lowess
 - [ ] maxsorted
 - [ ] mean
@@ -367,59 +320,6 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] ranks
 - [ ] strided
 - [ ] test
-- [ ] ttest
-- [ ] ttest2
-- [ ] vartest
-- [ ] wilcoxon
-- [ ] ztest
-- [ ] ztest2
-
-
-# `api/datasets` Functions Checklist [43]
-
-- [ ] afinn-111
-- [ ] afinn-96
-- [ ] berndt-cps-wages-1985
-- [ ] cdc-nchs-us-births-1969-1988
-- [ ] cdc-nchs-us-births-1994-2003
-- [ ] cdc-nchs-us-infant-mortality-bw-1915-2013
-- [ ] cmudict
-- [ ] dale-chall-new
-- [ ] female-first-names-en
-- [ ] fivethirtyeight-ffq
-- [ ] frb-sf-wage-rigidity
-- [ ] harrison-boston-house-prices
-- [ ] harrison-boston-house-prices-corrected
-- [ ] herndon-venus-semidiameters
-- [ ] liu-negative-opinion-words-en
-- [ ] liu-positive-opinion-words-en
-- [ ] male-first-names-en
-- [ ] minard-napoleons-march
-- [ ] moby-dick
-- [ ] month-names-en
-- [ ] nightingales-rose
-- [ ] pace-boston-house-prices
-- [ ] primes-100k
-- [ ] savoy-stopwords-fin
-- [ ] savoy-stopwords-fr
-- [ ] savoy-stopwords-ger
-- [ ] savoy-stopwords-it
-- [ ] savoy-stopwords-por
-- [ ] savoy-stopwords-sp
-- [ ] savoy-stopwords-swe
-- [ ] sotu
-- [ ] spache-revised
-- [ ] spam-assassin
-- [ ] ssa-us-births-2000-2014
-- [ ] standard-card-deck
-- [ ] stopwords-en
-- [ ] suthaharan-multi-hop-sensor-network
-- [ ] suthaharan-single-hop-sensor-network
-- [ ] us-states-abbr
-- [ ] us-states-capitals
-- [ ] us-states-capitals-names
-- [ ] us-states-names
-- [ ] us-states-names-capitals
 
 # `api/blas` Functions Checklist [57]
 ### Level 1 [33]
@@ -457,34 +357,7 @@ _these are a part of the `@stdlib/math/base/special` will need the `@stdlib/comp
 - [ ] sscal
 - [ ] sswap
 
-### Level 2 [21]
-- [ ] dgemv
-- [ ] dger
-- [ ] dspmv
-- [ ] dspr
-- [ ] dsymv
-- [ ] dsyr
-- [ ] dsyr2
-- [ ] dtrmv
-- [ ] dtrsv
-- [ ] ggemv
-- [ ] gger
-- [ ] gsyr
-- [ ] sgemv
-- [ ] sger
-- [ ] sspmv
-- [ ] sspr
-- [ ] ssymv
-- [ ] ssyr
-- [ ] ssyr2
-- [ ] strmv
-- [ ] strsv
 
-### Level 3 [3]
-- [ ] dgemm
-- [ ] ggemm
-- [ ] sgemm
----
 > _The complex BLAS functions need the complex numbers infrastructure in the integration repo, hence not included in the audit_
 
 # `api/array` Functions Checklist
